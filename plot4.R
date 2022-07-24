@@ -5,7 +5,7 @@ plot_set<-subset(dataset, Date=="1/2/2007"|Date=="2/2/2007")
 #Convert Date and Time to date/time class
 plot_set$Date_Time<-strptime(paste(plot_set$Date, plot_set$Time),
                              format="%d/%m/%Y %H:%M:%S")
-#Plot 3
+#Plot 4
 png("plot4.png", width=480, height=480)
 par(mfrow = c(2, 2))
 with(plot_set, {
